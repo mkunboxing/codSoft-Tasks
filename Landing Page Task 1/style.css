@@ -1,0 +1,517 @@
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  height: 90vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("assests/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  /* z-index: 0; */
+}
+
+/* Navbar styles */
+.navbar {
+  /* background-color: #fec300; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+
+}
+
+.logo img {
+  max-height: 100px;
+  /* Adjust as needed */
+  z-index: 60;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  z-index: 50;
+
+}
+
+.nav-links li {
+  margin-right: 50px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 1000;
+  font-size: 1.2em;
+}
+
+.nav-links li a:hover {
+  color: #ff0000;
+  /* background-color: #f2f2f2; */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.navbar button {
+  background-color: #ffffff;
+  color: rgb(0, 23, 151);
+  font-size: .7em;
+  font-weight: 700;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 70vh;
+    width: 100%;
+    /* z-index: 0; */
+  }
+  .nav-links li {
+    margin-right: 20px;
+  }
+
+  .logo img {
+    max-height: 50px;
+    /* Adjust as needed */
+    z-index: 60;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+/* Banner styles */
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  /* z-index: 1;  */
+  /* display: block; */
+  object-fit: cover;
+
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: rgb(33, 33, 33);
+  background: linear-gradient(90deg, rgba(16, 16, 16, 0.895) 5%, rgba(255, 255, 255, 0.108) 36%);
+}
+
+.banner-text {
+  position: absolute;
+  top: 48%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* text-align: center; */
+  z-index: 40;
+  margin-left: 40px;
+}
+
+.banner-text h1 {
+  font-size: 5rem;
+  /* Use a fixed font size */
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: 'Montserrat', Courier, monospace;
+}
+
+.get-button {
+  background-color: #07bd10;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.watch-button {
+  background-color: #ffffff;
+  color: rgb(0, 23, 151);
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+  .banner-text {
+    top: 40%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    margin-left: 10px;
+    /* background-color: #07bd10; */
+  }
+
+  .banner-text h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', Courier, monospace;
+  }
+
+  .get-button {
+    font-size: 0.7em;
+  }
+
+  .watch-button {
+    font-size: 0.7em;
+  }
+
+}
+
+.custom-shape-divider-bottom-1702888349 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.custom-shape-divider-bottom-1702888349 svg {
+  position: relative;
+  display: block;
+  width: calc(128% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1702888349 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1702888349 svg {
+    width: calc(151% + 1.3px);
+    height: 90px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1702888349 svg {
+    width: calc(153% + 1.3px);
+    height: 42px;
+  }
+}
+
+
+
+
+.additional-text {
+  text-align: center;
+  /* Center align the text */
+  margin: 20px;
+  padding: 30px;
+
+  /* Adjust margin top as needed */
+}
+
+.additional-text h2 {
+  color: rgb(0, 0, 125);
+  font-family: 'Montserrat', Courier, monospace;
+  font-size: 3em;
+}
+
+.additional-text p {
+  color: rgb(0, 0, 125);
+  font-family: 'Montserrat', Courier, monospace;
+}
+
+@media screen and (max-width: 768px) {
+  .additional-text h2 {
+
+    font-size: 2em;
+  }
+
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  /* Align cards with space from both sides */
+  flex-wrap: wrap;
+  padding: 0 20px;
+  /* Add space from both sides of the screen */
+  margin-top: 20px;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.card {
+  width: calc(25% - 20px);
+  /* Set width for each card with space between */
+  height: 150px;
+  margin-bottom: 20px;
+  /* Add margin bottom for space between rows */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* Rounded corners */
+  overflow: hidden;
+  /* Hide overflow content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Add shadow for hover effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  /* Add transition effect */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* Move the card up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  /* Increase shadow on hover */
+}
+
+.card img {
+  width: 100%;
+  height: 75%;
+  /* Set a fixed height for all images */
+  object-fit: cover;
+  /* Maintain aspect ratio and cover the entire container */
+  border-radius: 8px 8px 0 0;
+  /* Rounded corners for the image */
+}
+
+.card h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: .9em;
+  text-align: center;
+  color: rgb(0, 0, 165);
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .card-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+    /* width: calc(25% - 20px); */
+    /* Set width for each card with space between */
+    height: 180px;
+  }
+}
+
+/* Styles for big cards */
+.big-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px 50px;
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.big-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(40% - 20px);
+  /* Set width for each big card with space between */
+  height: 400px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+
+  /* margin: 30px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Add shadow for hover effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  /* Add transition effect */
+
+}
+
+.big-card img {
+  width: 50%;
+  height: 50%;
+  max-width: 100%;
+  /* Ensure images don't exceed their container */
+  /* display: block; Remove any default spacing */
+  border-radius: 8px;
+  /* Apply rounded corners if needed */
+  /* Other styles as needed */
+}
+
+.big-card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.big-card-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: rgb(0, 5, 148);
+
+}
+
+.big-card-content p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.big-card-content button {
+  background-color: rgb(0, 5, 148);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.big-card-content button:hover {
+  background-color: rgb(241, 210, 8);
+  color: #323232;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.big-card:hover {
+  transform: translateY(-5px);
+  /* Move the card up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  /* Increase shadow on hover */
+}
+
+
+/* Adjust styles for mobile screens if needed */
+@media screen and (max-width: 767px) {
+  .big-card-container {
+    /* Adjust margin for smaller screens */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .big-card {
+    width: calc(100% - 20px);
+    height: auto;
+  }
+}
+
+
+
+/* Styles for the footer */
+footer {
+  background-color: #f2f2f2;
+  /* text-align: center; */
+}
+
+.footer-banner {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("assests/footer_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+
+}
+
+.footer-banner img {
+  width: 100%;
+  height: 80vh;
+  display: block;
+}
+
+.banner-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  width: 80%;
+  /* background-color: #07bd10; */
+  /* Optional: Change text color to contrast with the image */
+}
+
+.banner-content h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 3em;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-content h2 {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+}
+
+.banner-content p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.banner-content button {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #1bb210;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner-content button:hover {
+  background-color: #555;
+}
+
+/* Gradient overlay */
+.footer-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.309));
+  z-index: 0;
+
+}
